@@ -1,0 +1,45 @@
+{
+    "raiz": "Operacion",
+    "valor": "0",
+    "hoja1":{
+        "nombre": "Operando",
+        "valor": "0",
+        "produce": {
+            "nombre": "Nomvar",
+            "valor": "0",
+            "produce":"$a"
+        }
+    },
+    "hoja2":{
+        "nombre": "Operador",
+        "produce": "-"
+    },
+    "hoja3":{
+        "nombre": "Operando",
+        "valor": "0",
+        "produce": {
+            "nombre": "Nomvar",
+            "valor": "0",
+            "produce":"$b"
+        }
+    },
+    "hoja4":{
+        "nombre": "Continuacion",
+        "valor": "0",
+        "produce": {
+            "hoja1": {
+                "nombre": "Operador",
+                "produce": "+"
+            },
+            "hoja2": {
+                "nombre": "Operando",
+                "valor": "0",
+                "produce": {
+                    "nombre": "Nomvar",
+                    "valor": "0",
+                    "produce":"$c0"
+                }
+            }
+        }
+    }
+}

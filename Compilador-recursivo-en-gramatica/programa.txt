@@ -1,0 +1,53 @@
+¿
+INT :numerouno = 10;
+INT :numerodos = 20;
+INT :numerotres = 10;
+
+STR :cadena = "hola";
+STR :cadenados = "mundo";
+
+# este es un comentario para ver que es lo que procede con espacio
+
+FLT :decimal = 11,5; #aquí se puede poner un comentario
+FLT :decimaldos = 21.5;
+FLT :decimaltres = 11.5
+
+CHR :caracter = "a";
+CHR :nuevocaracter = "b";
+
+#Este es un comentario sin espacio para ver que es lo que procede
+
+BOL :verdadero = TRUE;
+BOL :falso = FALSE;
+
+INT :suma = :numerouno + :numerodos;
+INT :resta = :numerouno - :numerodos;
+INT :multiplicacion = :numerouno * :numerodos;
+INT :division = :numerouno / :numerodos;
+
+STR :nuevacadena = :cadena , :cadenados;
+
+FLT :sumadecimal = :decimal + :decimaldos;
+FLT :restadecimal = :decimal - :decimaldos;
+FLT :multiplicaciondecimal = :decimal * :decimaldos;
+FLT :divisiondecimal = :decimal / :decimaldos;
+
+STR :nuevocaracter = :caracter , :nuevocaracter;
+
+INS :suma;
+INS :resta;
+INS :multiplicacion;
+INS :division;
+
+INS :nuevacadena;
+
+INS :sumadecimal;
+INS :restadecimal;
+INS :multiplicaciondecimal;
+INS :divisiondecimal;
+
+INS :nuevocaracter;
+
+INS :verdadero;
+SND :falso;
+?

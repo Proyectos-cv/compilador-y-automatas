@@ -1,0 +1,70 @@
+// Arbol de derivación
+digraph {
+	A [label="Asignar 
+ valor: $a = $a + 170 * 98.2 - $c0 ;"]
+	B [label="NomVar 
+ valor: $a"]
+	C [label="="]
+	D [label="Operacion 
+ valor: $a + 170 * 98.2 - $c0"]
+	E [label=";"]
+	F [label="$a"]
+	G [label="Operando 
+ valor: $a"]
+	H [label="Operador 
+ valor: +"]
+	I [label="Operando 
+ valor: 170"]
+	J [label="Continuacion 
+ valor: * 98.2 - $c0"]
+	K [label="NomVar 
+ valor: $a"]
+	L [label="$a"]
+	M [label="+"]
+	N [label="Entero 
+ valor: 170"]
+	O [label=170]
+	P [label="Operador 
+ valor: *"]
+	Q [label="Operando 
+ valor: 98.2"]
+	R [label="Continuacion 
+ valor: - $c0"]
+	S [label="*"]
+	T [label="Decimal 
+ valor: 98.2"]
+	U [label=98.2]
+	V [label="Operador 
+ valor: -"]
+	W [label="Operando 
+ valor: $c0"]
+	X [label="-"]
+	Y [label="NomVar 
+ valor: $c0"]
+	Z [label="$c0"]
+	A -> B
+	A -> C
+	A -> D
+	A -> E
+	B -> F
+	D -> G
+	D -> H
+	D -> I
+	D -> J
+	G -> K
+	K -> L
+	H -> M
+	I -> N
+	N -> O
+	J -> P
+	J -> Q
+	J -> R
+	P -> S
+	Q -> T
+	T -> U
+	R -> V
+	R -> W
+	V -> X
+	W -> Y
+	Y -> Z
+}

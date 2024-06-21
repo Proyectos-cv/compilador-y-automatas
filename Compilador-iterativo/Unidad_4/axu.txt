@@ -1,0 +1,12 @@
+&Start ;
+&int $a ;
+&float $b ;
+&chr $c ;
+&str $d ;
+&print ( "Dame_un_valor:_" ) ;
+&read $a ;
+#hola_comentario_adios
+&print ( "valor_de_a:_", $a ) ;
+$b = $a * $a ++ $c / 2 - 3.45 ;
+&End
+

@@ -1,0 +1,20 @@
+&Start ;
+&int $a ; 
+&float $b , $c0 ;
+&bool $dandera , $taco  ;
+&chr $letra , $ss ;
+&str $cadena ;
+$cadena = "cuaco" ;
+$a = 10 ;
+$b = 5.5 ;
+$b = $a - $b + $c0 ; 
+#comentario_al_azar
+$dandera = false ;
+$ss = "a" ;
+$a = $a + 170 * 98.2 - $c0 ;
+#hola
+&End
+
+
+
+

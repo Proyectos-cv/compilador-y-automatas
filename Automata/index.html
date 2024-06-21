@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main>
+    <section class="title">
+      <h1>Lenguajes y Autómatas</h1>
+      <h2 class="h2">Práctica autómata</h2>
+    </section>
+
+    <div class="body">
+
+      <div class="container">
+        <div class="container__item">
+          <h3>Automata 1</h3>
+          <p>Este autómata recibe una cadena con el siguiente patron y las siguientes condiciones: </p>
+          <ul>
+            <li>Una cadena debe comenzar con una letra <span>a</span> o <span>b</span>.</li>
+            <li>Si la cadena comienza con una letra <span>b</span> se ciclará hasta encontrar una letra <span>a</span> o
+              hasta acabar la cadena.</li>
+            <li>Si aparece una letra <span>a</span> despues de una serie de letras <span>b</span>, saltará al siguiente
+              estado (Q1).</li>
+            <li>En el estado Q1, si la cadena continua con la letra <span>a</span> se ciclará hasta encontrar una letra
+              <span>b</span>, acabar la cadena o encontrar una letra que no coincida con el patrón.</li>
+            <li>En el estado Q1, si la siguiente letra es una <span>b</span>, continua hacia el siguiente estado.</li>
+            <li>Si la siguiente letra en el estado Q2 es una <span>a</span> regresará al estado Q1</li>
+            <li>Si la siguiente letra en el estado Q2 es una <span>b</span> avanzará hacia el estado Q3</li>
+            <li>Si la siguiente letra en el estado Q3 es una <span>a</span> o una <span>b</span>, se ciclará hasta terminar
+            la cadena o hasta encontrar una letra que no corresponda al patrón.</li>
+            <li>Si cualquiera de estas condiciones no se cumple, el patrón será rechazado.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="inputs">
+        <div class="inputs__item">
+          <h3>Ingresa la cadena</h3>
+          <input type="text" class="entry" id="entrada" placeholder="Ingresa la cadena">
+          <button id="btn" class="btn" onclick="recibir_funcion();">Evaluar</button>
+          <button id="clean" class="btn" onclick="limpiar();">Limpiar</button>
+        </div>
+        <div class="inputs__item">
+          <h3>Resultado</h3>
+          <p id="salida">Esperando resultados...</p>
+        </div>
+
+        <div class="images">
+          <img src="automataBase.png" alt="" id="imagen">
+        </div>
+      </div>
+    </div>
+    </div>
+  </main>
+</body>
+<script src="logica.js"></script>
+</html>

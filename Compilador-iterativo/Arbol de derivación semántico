@@ -1,0 +1,118 @@
+// Arbol de derivación semántico
+digraph {
+	A [label="Asignar 
+ valor: $a = 5 * 2 + 3 * 4 - 10 / 2 + 5 ;"]
+	B [label="NomVar 
+ valor: $a"]
+	C [label="="]
+	D [label="Operacion 
+ valor: 5 * 2 + 3 * 4 - 10 / 2 + 5"]
+	E [label=";"]
+	F [label="$a"]
+	G [label="Operando 
+ valor: 5"]
+	H [label="Operador 
+ valor: *"]
+	I [label="Operando 
+ valor: 2"]
+	J [label="Continuacion 
+ valor: + 3 * 4 - 10 / 2 + 5"]
+	K [label="Entero 
+ valor: 5"]
+	L [label=5]
+	M [label="*"]
+	N [label="Entero 
+ valor: 2"]
+	O [label=2]
+	P [label="Operador 
+ valor: +"]
+	Q [label="Operando 
+ valor: 3"]
+	R [label="Continuacion 
+ valor: * 4 - 10 / 2 + 5"]
+	S [label="+"]
+	T [label="Entero 
+ valor: 3"]
+	U [label=3]
+	V [label="Operador 
+ valor: *"]
+	W [label="Operando 
+ valor: 4"]
+	X [label="Continuacion 
+ valor: - 10 / 2 + 5"]
+	Y [label="*"]
+	Z [label="Entero 
+ valor: 4"]
+	a [label=4]
+	b [label="Operador 
+ valor: -"]
+	c [label="Operando 
+ valor: 10"]
+	d [label="Continuacion 
+ valor: / 2 + 5"]
+	e [label="-"]
+	f [label="Entero 
+ valor: 10"]
+	g [label=10]
+	h [label="Operador 
+ valor: /"]
+	i [label="Operando 
+ valor: 2"]
+	j [label="Continuacion 
+ valor: + 5"]
+	k [label="/"]
+	l [label="Entero 
+ valor: 2"]
+	m [label=2]
+	n [label="Operador 
+ valor: +"]
+	o [label="Operando 
+ valor: 5"]
+	p [label="+"]
+	q [label="Entero 
+ valor: 5"]
+	r [label=5]
+	A -> B
+	A -> C
+	A -> D
+	A -> E
+	B -> F
+	D -> G
+	D -> H
+	D -> I
+	D -> J
+	G -> K
+	K -> L
+	H -> M
+	I -> N
+	N -> O
+	J -> P
+	J -> Q
+	J -> R
+	P -> S
+	Q -> T
+	T -> U
+	R -> V
+	R -> W
+	R -> X
+	V -> Y
+	W -> Z
+	Z -> a
+	X -> b
+	X -> c
+	X -> d
+	b -> e
+	c -> f
+	f -> g
+	d -> h
+	d -> i
+	d -> j
+	h -> k
+	i -> l
+	l -> m
+	j -> n
+	j -> o
+	n -> p
+	o -> q
+	q -> r
+}
